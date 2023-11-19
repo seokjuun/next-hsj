@@ -6,7 +6,12 @@ export default function DetailBook() {
       id="#1"
       className="w-[508px] left-[100px] absolute h-[768px] top-[100px]"
     >
-      <Image src="/main/placeholder.png" width={508} height={768} />
+      <Image
+        src="/main/img/alice (1).png"
+        width={508}
+        height={768}
+        alt="앨리스"
+      />
     </div>
   );
 }

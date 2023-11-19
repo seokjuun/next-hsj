@@ -37,8 +37,8 @@ export default function Autoslide() {
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
           <Image
             key={index}
-            width={1921}
-            height={756}
+            width={3346}
+            height={218}
             src={`/main/slide01.png`}
             alt={`Slider Image ${index}`}
             className="w-full h-full object-cover"
@@ -60,8 +60,8 @@ export default function Autoslide() {
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
           <Image
             key={index}
-            width={1921}
-            height={756}
+            width={3346}
+            height={218}
             src={`/main/slide02.png`}
             alt={`Slider Image ${index}`}
             className="w-full h-full object-cover"
