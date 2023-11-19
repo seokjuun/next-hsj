@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
-const AutoSlide: React.FC = () => {
+export default function Autoslide() {
   const imageWidth = 3346;
   const [position, setPosition] = useState(0);
   const [forwardPosition, setForwardPosition] = useState(imageWidth);
@@ -34,8 +35,10 @@ const AutoSlide: React.FC = () => {
         }}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
-          <img
+          <Image
             key={index}
+            width={1921}
+            height={756}
             src={`/main/slide01.png`}
             alt={`Slider Image ${index}`}
             className="w-full h-full object-cover"
@@ -55,8 +58,10 @@ const AutoSlide: React.FC = () => {
         }}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
-          <img
+          <Image
             key={index}
+            width={1921}
+            height={756}
             src={`/main/slide02.png`}
             alt={`Slider Image ${index}`}
             className="w-full h-full object-cover"
@@ -65,6 +70,4 @@ const AutoSlide: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default AutoSlide;
+}
