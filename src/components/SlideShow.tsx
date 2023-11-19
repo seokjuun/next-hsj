@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default function SlideShow() {
+  const images = ["/main/green.png", "/main/blue.png", "/main/red.png"];
+
   const [currentImage, setCurrentImage] = useState<number>(0);
   const [fade, setFade] = useState<boolean>(false);
 

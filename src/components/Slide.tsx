@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { useState, useEffect } from "react";
 
-const images = ["/main/green.png", "/main/blue.png", "/main/red.png"];
+export default function Slide() {
+  const images = ["/main/green.png", "/main/blue.png", "/main/red.png"];
 
-const SlideShow: React.FC = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
   const [fade, setFade] = useState<boolean>(false);
 
@@ -82,14 +80,4 @@ const SlideShow: React.FC = () => {
       </button>
     </div>
   );
-};
-
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <SlideShow />
-    </div>
-  );
-};
-
-export default App;
+}

@@ -26,7 +26,7 @@ export default function Autoslide() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-[1400px] h-[600px] top-[80px] left-0">
+    <>
       <div
         className="flex absolute transition-transform duration-500"
         style={{
@@ -68,6 +68,6 @@ export default function Autoslide() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
